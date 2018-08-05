@@ -6,13 +6,10 @@
     font-family: 'Arbutus';
     font-weight: bold;
     border: 0;
-    padding: 1% 0;
   }
 
   .navbar-brand {
     float: left;
-    padding-top: 0px;
-    padding-left: 5px;
   }
 
   .navbar-inverse .navbar-nav .active a, .navbar-inverse .navbar-nav .active a:focus, .navbar-inverse .navbar-nav .active a:hover, {
