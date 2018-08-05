@@ -2,9 +2,7 @@
     margin-bottom: 0;
     border-radius: 0;
     background-color: #000000;
-    font-size: 1.2em;
-    font-family: 'Arbutus';
-    font-weight: bold;
+
     border: 0;
     padding-top: 0px;
     padding-left: 10px;
@@ -20,4 +18,11 @@
   .navbar-inverse .navbar-nav .active a:hover, {
     color: #FFF
     background-color: #000000;
+  }
+
+  .navbar-inverse .navbar-nav li a {
+    color: #D5D5D5
+    font-size: 1.2em;
+    font-family: 'Arbutus';
+    font-weight: bold;
   }
