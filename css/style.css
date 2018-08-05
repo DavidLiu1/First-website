@@ -10,8 +10,8 @@
   }
 
   .navbar-brand {
-    margin-top: 0;
     float: left;
+    padding: 5px, 0;
   }
 
   .navbar-inverse .navbar-nav .active a, 
