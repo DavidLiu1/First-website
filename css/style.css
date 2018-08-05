@@ -5,13 +5,17 @@
     border: 0;
     padding-right: 15px;
     background-image: none;
-    background-color: #000000;
+    background-color: #EFE56C;
     background-repeat: no-repeat;
       }
 
   .logo {
     float: left;
       }
+
+.navbar .navbar-toggle .icon-bar {
+    background-color: #FF5733;
+}
 
 .navbar .navbar-nav li a {
 }
