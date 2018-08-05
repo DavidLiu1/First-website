@@ -13,7 +13,8 @@
   .navbar-brand {
     float: left;
     min-height: 55px;
-    padding: 0 75px 56px;
+    padding-top: 0px;
+    padding-left: 10px;
   }
 
   .navbar-inverse .navbar-nav .active a, 
