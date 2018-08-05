@@ -1,1 +1,12 @@
-
+  .navbar {
+    margin-bottom: 0;
+    border-radius: 0;
+    background-color: #000000;
+    padding: 1% 0;
+    font-size: 1.2em;
+    border: 0;
+  }
+  .navbar-brand {
+    float: left;
+    padding: 0px 10px 10px;
+  }
