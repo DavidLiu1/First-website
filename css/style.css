@@ -5,8 +5,7 @@
     border: 0;
     padding-right: 15px;
     background-image: none;
-    background-color: #EFE56C;
-    background-repeat: no-repeat;
+    background-color: rgba(201, 201, 201, 0.4);
       }
 
   .logo {
@@ -17,11 +16,6 @@
     background-color: #FF5733;
 }
 
-.navbar-title {
-  color: #F58D1A;
-  font-size: 1.5em;
-  text-align: center;
-}
 .navbar .navbar-nav li a {
   color: #6797F4;
 }
@@ -40,4 +34,23 @@
   font-size: 130%;
   font-weight: bold;
   background-color: #B6B6B1;
+}
+
+.intro {
+  padding-top: 40px;
+  text-align: center;
+}
+.intro h1 {
+  font-family: 'Arbutus';
+  font-size: 550%;
+  font-weight: bold;
+  color: black;
+  
+}
+
+#intro-pic {
+  max-width: 200px;
+  max-height: 200px;
+  margin: 1% auto;
+
 }
