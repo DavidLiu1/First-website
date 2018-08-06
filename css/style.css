@@ -17,15 +17,23 @@
     background-color: #FF5733;
 }
 
+.navbar-title {
+  color: #F58D1A;
+  font-size: 1.5em;
+  text-align: center;
+}
 .navbar .navbar-nav li a {
+  color: #6797F4;
 }
 
 .navbar .navbar-nav li a:hover {
   font-size: 130%;
+  color: #000000;
 }
 
 .navbar .navbar-nav li a:focus {
   font-size: 130%;
+  color: #000000;
 }
 
 #navbar-collapse-main .active a {
