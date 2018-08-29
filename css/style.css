@@ -1,5 +1,5 @@
   .navbar {
-    font-size: 1.2em;
+    font-size: 1em;
     font-family: 'Arbutus';
     font-weight: bold;
     border: 0;
@@ -36,21 +36,31 @@
     background-color: #B6B6B1;
   }
 
-  .intro {
-padding-top: 40px;
-    text-align: center;
-  }
-  .intro h1 {
-    font-family: 'Arbutus';
-    font-size: 550%;
-    font-weight: bold;
-    color: black;
+.name {
+  height: 50px;
+  text-align: center;
+}
 
-  }
+#name {
+  color: black;
+  padding-top: 5px;
+  font-size: 2em;
+}
 
-  #intro-pic {
-    max-width: 200px;
-    max-height: 200px;
-    margin: 1% auto;
+#intro-pic {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
 
+.intro .intro-paragraph {
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 10%;
+}
+
+@media (max-width: 768px) {
+  .intro .intro-paragraph {
+    padding-top: 0;
   }
+}
