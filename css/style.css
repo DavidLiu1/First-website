@@ -36,31 +36,135 @@
     background-color: #B6B6B1;
   }
 
-.name {
-  height: 50px;
-  text-align: center;
-}
-
-#name {
-  color: black;
-  padding-top: 5px;
-  font-size: 2em;
-}
-
-#intro-pic {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.intro .intro-paragraph {
-  padding-left: 10%;
-  padding-right: 10%;
-  padding-top: 10%;
-}
-
-@media (max-width: 768px) {
-  .intro .intro-paragraph {
-    padding-top: 0;
+  body{
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
   }
+
+  .name {
+    height: 50px;
+    text-align: center;
+  }
+
+  #name {
+    color: black;
+    padding-top: 5px;
+    font-size: 2em;
+  }
+
+  .trigger {
+    border: 20px solid black;
+    height: 200px;
+    width: 200px;
+  }
+  .intro-pic {
+    width: 100px;
+    height: 100px;
+    background-color: pink;
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    transition: transform 300ms ease-in-out;
+  }
+
+
+  .trigger:hover .intro-pic {
+    transform: translate(200px, 150px) rotate(20deg);
+  }
+
+  .intro .intro-paragraph {
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 10%;
+  }
+
+  @media (max-width: 768px) {
+    .intro .intro-paragraph {
+      padding-top: 0;
+    }
+  }
+
+  .skills h1{
+    text-align: center;
+    font-weight: bold;
+    font-size: 4em;
+  }
+
+  .skills h2 {
+    text-align: center;
+    font-size: 2em;
+  }
+
+  .skills ul{
+    list-style: none;
+    text-align: center;
+  }
+
+  .my-slider ul{
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: #ccc;
+    margin: 0;
+    padding: 0;
+  }
+
+  .my-slider ul li h1{
+    margin-top: 0;
+  }
+
+  .my-slider ul li{
+    list-style: none;
+    width: 100%;
+    height: 20%;
+    border-bottom: 1px solid black;
+    float: left;
+    box-sizing: border-box;
+    transition: 0.5s;
+    text-align: center;
+  }
+  .my-slider ul:hover li {
+    height: 10%;
+  }
+  .my-slider ul li:hover {
+    height: 60%;
+  }
+
+  .my-slider ul li:nth-child(odd) .slider-content {
+    position: relative;
+    left: -100%;
+    width: 20%;
+    height: 100%;
+    background-color: black;
+    box-sizing: border-box;
+    color: white;
+    opacity: 1;
+  }
+
+    .my-slider ul li:nth-child(even) .slider-content {
+    position: relative;
+    right: -100%;
+    width: 20%;
+    height: 100%;
+    background-color: black;
+    box-sizing: border-box;
+    color: white;
+    opacity: 1;
+  }
+
+.my-slider ul li:nth-child(odd):hover .slider-content {
+  left: 0;
+  transition: 0.5s;
+  transition-delay: 0.1s;
+  opacity: 1;
+}
+
+.my-slider ul li:nth-child(even):hover .slider-content {
+  right: -80%;
+  transition: 0.5s;
+  transition-delay: 0.3s;
+  opacity: 1;
 }
