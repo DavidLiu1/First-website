@@ -133,14 +133,30 @@
     height: 60%;
   }
 
+ .my-slider ul li:nth-child(odd) {
+background-image: url("../img/me.jpg");
+background-size: 100% 500px;
+
+ }
+
+ .my-slider ul li:nth-child(even) {
+background-image: url("../img/photo.jpg");
+background-size: 100% 600px;
+
+ }
+
+  .my-slider ul li:nth-child(even) {
+  background-color: yellow;
+ }
   .my-slider ul li:nth-child(odd) .slider-content {
     position: relative;
     left: -100%;
     width: 20%;
     height: 100%;
-    background-color: black;
+    background-color: rgba(248, 200, 7, 0.7);
     box-sizing: border-box;
-    color: white;
+    color: black;
+    font-weight: bold;
     opacity: 1;
   }
 
@@ -149,9 +165,10 @@
     right: -100%;
     width: 20%;
     height: 100%;
-    background-color: black;
+    background-color: rgba(51, 204, 51,0.7);
     box-sizing: border-box;
-    color: white;
+    color: black;
+    font-weight: bold;
     opacity: 1;
   }
 
@@ -167,4 +184,29 @@
   transition: 0.5s;
   transition-delay: 0.3s;
   opacity: 1;
+}
+
+@media (max-width: 600px) {
+    .my-slider ul:click li {
+    height: 10%;
+  }
+  .my-slider ul li:click {
+    height: 60%;
+  }
+
+
+
+.my-slider ul li:nth-child(odd):click .slider-content {
+  left: 0;
+  transition: 0.5s;
+  transition-delay: 0.1s;
+  opacity: 1;
+}
+
+.my-slider ul li:nth-child(even):click .slider-content {
+  right: -80%;
+  transition: 0.5s;
+  transition-delay: 0.3s;
+  opacity: 1;
+}
 }
